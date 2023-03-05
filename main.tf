@@ -23,6 +23,6 @@ resource "random_integer" "ran" {
   resource "random_pet" "my-pet" {
     prefix = "Mrs"
     separator = "."
-    lenght = 10
+    length = 1
   }
 
