@@ -20,7 +20,7 @@ resource "random_integer" "ran" {
     run_id = var.run_id
   }
 }
-  resource "random_pet" "my pet" {
+  resource "random_pet" "my-pet" {
     prefix = "Mrs"
     separator = "."
     lenght = 10
