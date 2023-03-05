@@ -19,9 +19,10 @@ resource "random_integer" "ran" {
   keepers = {
     run_id = var.run_id
   }
+}
   resource "random_pet" "my pet" {
     prefix = "Mrs"
     separator = "."
     lenght = 10
   }
-}
+
