@@ -12,6 +12,10 @@ type = bool
   default = true
   
 }
+  variable "prefix" {
+    default = "Mrs"
+    type = string
+  }
 resource "random_integer" "ran" {
   count = 1
   min = 31
@@ -21,7 +25,7 @@ resource "random_integer" "ran" {
   }
 }
   resource "random_pet" "my-pet" {
-    prefix = "Mrs"
+    prefix = var.prefix
     separator = "."
     length = 1
   }
