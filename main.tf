@@ -24,11 +24,7 @@ resource "random_integer" "ran" {
     run_id = var.run_id
   }
 }
-  resource "random_pet" "my-pet" {
-    prefix = var.prefix
-    separator = "."
-    length = 1
-  }
+
 
 
 
