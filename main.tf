@@ -3,7 +3,7 @@ variable "run_id" {
   #sensitive = true
 }
 variable "sleep_time" {
-  default = 3
+  default = 2
 }
 variable "dynatrace-operator_enabled" {
   description = "dynatrace-operator_enabled" 
