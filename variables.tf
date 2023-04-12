@@ -12,7 +12,7 @@ type = bool
     default = "Mrs"
     type = string
   }
-ariable "run_id" {
+variable "run_id" {
   default = "run_id_1"
   #sensitive = true
 }
