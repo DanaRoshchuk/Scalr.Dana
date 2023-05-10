@@ -2,6 +2,7 @@ variable "quantity" {
 	type = string
 }
 variable "prefix" {
+	default = []
 	type = list
 }
 variable "run_id" {
