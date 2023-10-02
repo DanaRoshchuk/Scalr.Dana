@@ -1,6 +1,18 @@
 terraform {
   required_version = ">= 1.2.0"
 }
+variable "run_id" {
+  default = "run_id_9"
+}
+resource "random_integer" "timeout" {
+  min = 50
+  max = 600
+
+  keepers = {
+    run_id = var.run_id
+  }
+}
+
 
 
 resource "null_resource" "env_vars" {
