@@ -1,9 +1,6 @@
 terraform {
   required_version = ">= 1.2.0"
 }
-variable "run_id" {
-  default = "run_id_10"
-}
 resource "random_integer" "timeout" {
   min = 50
   max = 600
