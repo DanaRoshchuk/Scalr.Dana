@@ -1,6 +1,6 @@
 
 resource "random_integer" "ran" {
-  count = 8
+  count = 9
   min = 31
   max = 200
   keepers = {
